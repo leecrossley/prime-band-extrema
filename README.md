@@ -6,14 +6,14 @@ Let $W_b(t)$ equal $b(1-1/t)$ for $1<t\le b$, $b^2/t-1$ for $b<t<b^2$, and zero 
 
 $$
  H_b(\rho)=e^{i\tau\log b}h_\rho,\qquad
- h_\rho=\frac{\sqrt b\,(b+1-2\sqrt b\cos(\tau\log b))}{1/4+\tau^2}>0.
+ h_\rho=\frac{\sqrt b\thinspace(b+1-2\sqrt b\cos(\tau\log b))}{1/4+\tau^2}>0.
 $$
 
 [Formal proof of the strip and phase identities](https://github.com/leecrossley/prime-band-mellin/tree/v1.0.0)
 
 Assume RH and count each nontrivial zeta zero with its multiplicity. Here $\gamma$ is Euler's constant, $C_0=2+\gamma-\log(4\pi)=\sum_\rho 1/[\rho(1-\rho)]$, $\Lambda$ is the von Mangoldt function, and $R(b)=\sum_n\Lambda(n)(b/n-1)_+$. The Mellin transform is taken with density $t^{s-1}dt$. At $s=0,1$ the analytic transform takes its continuous limiting value. [Zero-sum identity](https://arxiv.org/pdf/1202.0729)
 
-For $y>1$, the von Mangoldt explicit formula for $W_b$ consists of the main term, minus $\sum_\rho y^\rho H_b(\rho)$, minus $\sum_{j\ge1}y^{-2j}H_b(-2j)$. One may first smooth the weight in log coordinates. The zero coefficients are bounded by a common $O_b((1+|\Im\rho|)^{-2})$, the prime side is finite, and the trivial zeros have a geometric majorant. Taking the smoothing width to zero recovers the continuous weight, including its corners. Removing prime squares contributes $\sum_p(\log p)W_b(p^2/y)$. Partial summation with the prime number theorem gives its limit after normalization by $\sqrt y$ as $\int_1^b W_b(v^2)\,dv=2\sqrt b(\sqrt b-1)^2=B_b$. [Explicit formula and prime number theorem](https://people.maths.ox.ac.uk/greenbj/papers/primenumbers.pdf)
+For $y>1$, the von Mangoldt explicit formula for $W_b$ consists of the main term, minus $\sum_\rho y^\rho H_b(\rho)$, minus $\sum_{j\ge1}y^{-2j}H_b(-2j)$. One may first smooth the weight in log coordinates. The zero coefficients are bounded by a common $O_b((1+|\Im\rho|)^{-2})$, the prime side is finite, and the trivial zeros have a geometric majorant. Taking the smoothing width to zero recovers the continuous weight, including its corners. Removing prime squares contributes $\sum_p(\log p)W_b(p^2/y)$. Partial summation with the prime number theorem gives its limit after normalization by $\sqrt y$ as $\int_1^b W_b(v^2)\thinspace dv=2\sqrt b(\sqrt b-1)^2=B_b$. [Explicit formula and prime number theorem](https://people.maths.ox.ac.uk/greenbj/papers/primenumbers.pdf)
 
 We can compute the sum $L_b=\sum_\rho h_\rho$ explicitly. Set $S(b)=\sum_\rho b^\rho/[\rho(1-\rho)]$. Conjugate zeros pair, so $L_b=\sqrt b[(b+1)C_0-2S(b)]$. Applying the explicit formula to the original ramp at the single scale $b$ gives
 
@@ -64,4 +64,4 @@ The command checks the release manifest, reruns the arithmetic, and compares its
 
 ## Related result
 
-[Eventual positivity at 151/100](https://github.com/leecrossley/prime-band-151-100/tree/v1.0.0) · [Conditional oscillation at the same dilation](https://github.com/leecrossley/prime-band-three-halves-oscillation/tree/v1.0.0)
+[Eventual positivity at 151/100](https://github.com/leecrossley/prime-band-151-100/tree/v1.0.0) · [Conditional oscillation at three halves](https://github.com/leecrossley/prime-band-three-halves-oscillation/tree/v1.0.0)
