@@ -28,4 +28,4 @@ jobs:
           if [ -f requirements.txt ]; then "$RUNNER_TEMP/venv/bin/python" -m pip install -r requirements.txt; fi
           echo "$RUNNER_TEMP/venv/bin" >> "$GITHUB_PATH"
       - name: Certificates
-        run: sh verify-release.sh
+        run: bash verify-release.sh
