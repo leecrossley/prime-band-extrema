@@ -1,5 +1,7 @@
 # Extremal constants for a family of weighted prime sums
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24410840.svg)](https://doi.org/10.5281/zenodo.24410840)
+
 Under the Riemann hypothesis (RH), weighted sums of primes between $y$ and $b^2y$ tend to fall short of what the prime number theorem predicts. This repository works out how far the shortfall can swing. Under RH, once divided by $\sqrt y$, it is confined in the long run between two explicit constants, $B_b-L_b$ and $B_b+L_b$.
 
 $B_b$ is a steady push from the prime squares, which a sum over primes leaves out. $L_b$ is the most the zeta zeros can push in either direction. Both have closed forms, so the sign of the computable number $B_b-L_b$ shows what is known at each dilation $b$. If $B_b-L_b>0$, RH gives a shortfall at all sufficiently large $y$. If it is negative, RH together with rational linear independence of the distinct positive ordinates of the nontrivial zeta zeros gives both signs arbitrarily far out. If it is zero, the normalized liminf is zero under both hypotheses and the eventual sign is open. The companion repositories evaluate it at particular dilations.
