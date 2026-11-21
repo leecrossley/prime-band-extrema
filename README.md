@@ -4,7 +4,7 @@
 
 Under the Riemann hypothesis (RH), weighted sums of primes between $y$ and $b^2y$ tend to fall short of what the prime number theorem predicts. This repository works out how far the shortfall can swing. Under RH, once divided by $\sqrt y$, it is confined in the long run between two explicit constants, $B_b-L_b$ and $B_b+L_b$.
 
-$B_b$ is a steady push from the prime squares, which a sum over primes leaves out. $L_b$ is the most the zeta zeros can push in either direction. Both have closed forms, so the sign of the computable number $B_b-L_b$ shows what is known at each dilation $b$. If $B_b-L_b>0$, RH gives a shortfall at all sufficiently large $y$. If it is negative, RH together with rational linear independence of the distinct positive ordinates of the nontrivial zeta zeros gives both signs arbitrarily far out. If it is zero, the normalized liminf is zero under both hypotheses and the eventual sign is open. The companion repositories evaluate it at particular dilations.
+$B_b$ is a steady push from the prime squares, which a sum over primes leaves out. $L_b$ is the most the zeta zeros can push in either direction. Both have closed forms, so the sign of the computable number $B_b-L_b$ shows what is known at each dilation $b$. If $B_b-L_b>0$, RH gives a shortfall at all sufficiently large $y$. If it is negative, RH together with rational linear independence of the distinct positive ordinates of the nontrivial zeta zeros gives both signs arbitrarily far out. At the unique critical width the normalised liminf is zero under RH and the independence hypothesis. A later proof gives $D_b(y)>0$ for every real $y>0$ at that width under RH alone. [Critical-width proof](https://github.com/leecrossley/prime-band-critical-all-scales/blob/99f0a80a6f332a43942344c470ab410eba0eb2f7/README.md)
 
 ## Statement
 
@@ -36,6 +36,8 @@ $L_b$ has a closed form in logarithms, $\pi$, Euler's constant and a finite sum 
 | A first sufficient width for eventual bias | $b>1.84529052\ldots$ |
 | Small-scale obstruction | for $1<b<\sqrt2$ the prime 2 alone exceeds the main term at $y=2/b$ |
 
+At $b=2$, bramble_trace had already obtained the upper extremum by simultaneous recurrence. Their deficit at centre $2y$ is one third of ours. Converting the square-root normalisation multiplies their constant by $3\sqrt2$, taking $0.17691423488\ldots$ to $0.7505835310\ldots$. The formula above treats every $b>1$. [bramble_trace, revision 24](https://rstation.ai/api/v1/posts/uw5cfb_J_Cj7XJO6/attachment?revision=24)
+
 ## How the proof goes
 
 1. On the critical line $H_b(\rho)$ is $e^{i\tau\log b}$ times a positive number $h_\rho$. This has a separate Lean proof.
@@ -54,7 +56,7 @@ The executable certifies the dyadic numerical enclosures. The explicit formula, 
 bash verify-release.sh
 ```
 
-This checks the [SHA-256 manifest](SHA256SUMS), reruns the arithmetic and compares its output with the [recorded result](evidence/check.txt). It needs Python 3.9 or later and only the standard library. The recorded run used Python 3.9.6 on arm64 macOS. [Tagged publication](https://github.com/leecrossley/prime-band-extrema/releases/tag/v1.0.2)
+This checks the [SHA-256 manifest](SHA256SUMS), reruns the arithmetic and compares its output with the [recorded result](evidence/check.txt). It needs Python 3.9 or later and only the standard library. The recorded run used Python 3.9.6 on arm64 macOS. [Latest release](https://github.com/leecrossley/prime-band-extrema/releases/latest)
 
 ## Related results
 
