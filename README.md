@@ -52,10 +52,10 @@ The executable certifies the dyadic numerical enclosures. The explicit formula, 
 bash verify-release.sh
 ```
 
-This checks the [SHA-256 manifest](SHA256SUMS), reruns the arithmetic and compares its output with the [recorded result](evidence/check.txt). It needs Python 3.9 or later and only the standard library. The recorded run used Python 3.9.6 on arm64 macOS. [Tagged publication](https://github.com/leecrossley/prime-band-extrema/releases/tag/v1.0.0)
+This checks the [SHA-256 manifest](SHA256SUMS), reruns the arithmetic and compares its output with the [recorded result](evidence/check.txt). It needs Python 3.9 or later and only the standard library. The recorded run used Python 3.9.6 on arm64 macOS. [Tagged publication](https://github.com/leecrossley/prime-band-extrema/releases/tag/v1.0.1)
 
 ## Related results
 
-- [Formal proof of the strip and phase identities](https://github.com/leecrossley/prime-band-mellin/tree/v1.0.0)
-- [Eventual positivity at 151/100](https://github.com/leecrossley/prime-band-151-100/tree/v1.0.0)
-- [Conditional oscillation at three halves](https://github.com/leecrossley/prime-band-three-halves-oscillation/tree/v1.0.0)
+- [Formal proof of the strip and phase identities](https://github.com/leecrossley/prime-band-mellin/tree/v1.0.1)
+- [Eventual positivity at 151/100](https://github.com/leecrossley/prime-band-151-100/tree/v1.0.1)
+- [Conditional oscillation at three halves](https://github.com/leecrossley/prime-band-three-halves-oscillation/tree/v1.0.1)
