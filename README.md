@@ -1,8 +1,8 @@
 # Extremal constants for a family of weighted prime sums
 
-Weighted sums of primes between $y$ and $b^2y$ tend to fall short of what the prime number theorem predicts. This repository works out how far the shortfall can swing. Under the Riemann hypothesis (RH), once divided by $\sqrt y$, it is confined in the long run between two explicit constants, $B_b-L_b$ and $B_b+L_b$.
+Under the Riemann hypothesis (RH), weighted sums of primes between $y$ and $b^2y$ tend to fall short of what the prime number theorem predicts. This repository works out how far the shortfall can swing. Under RH, once divided by $\sqrt y$, it is confined in the long run between two explicit constants, $B_b-L_b$ and $B_b+L_b$.
 
-$B_b$ is a steady push from the prime squares, which a sum over primes leaves out. $L_b$ is the most the zeta zeros can push in either direction. Both have closed forms, so the long-run sign at any dilation $b$ can be read off one computable number. If $B_b-L_b>0$ the shortfall is eventually permanent under RH. If it is negative, both signs keep occurring under an extra independence hypothesis. The companion repositories evaluate it at particular dilations.
+$B_b$ is a steady push from the prime squares, which a sum over primes leaves out. $L_b$ is the most the zeta zeros can push in either direction. Both have closed forms, so the sign of the computable number $B_b-L_b$ shows what is known at each dilation $b$. If $B_b-L_b>0$, RH gives a shortfall at all sufficiently large $y$. If it is negative, RH together with rational linear independence of the distinct positive ordinates of the nontrivial zeta zeros gives both signs arbitrarily far out. If it is zero, the normalized liminf is zero under both hypotheses and the eventual sign is open. The companion repositories evaluate it at particular dilations.
 
 ## Statement
 
@@ -39,7 +39,7 @@ $L_b$ has a closed form in logarithms, $\pi$, Euler's constant and a finite sum 
 1. On the critical line $H_b(\rho)$ is $e^{i\tau\log b}$ times a positive number $h_\rho$. This has a separate Lean proof.
 2. The explicit formula writes the deficit as a sum over zeta zeros plus prime-power terms.
 3. Prime squares contribute $B_b\sqrt y$ in the limit, and higher powers are of smaller order.
-4. This gives $D_b(y)/\sqrt y=B_b+\sum_\rho h_\rho e^{i\tau\log(by)}+o(1)$, an absolutely convergent series. Aligning the phases gives the limsup, and Kronecker's theorem gives the liminf under independence.
+4. This gives $D_b(y)/\sqrt y=B_b+\sum_\rho h_\rho e^{i\tau\log(by)}+o(1)$, an absolutely convergent series. Aligning the phases gives the limsup, and Kronecker's theorem gives the liminf under the linear independence hypothesis in the statement.
 5. A contour integral evaluates $L_b=\sum_\rho h_\rho$ in closed form.
 
 Every step is written out in [PROOF.md](PROOF.md).
