@@ -9,7 +9,7 @@ $$
  h_\rho=\frac{\sqrt b\thinspace(b+1-2\sqrt b\cos(\tau\log b))}{1/4+\tau^2}>0.
 $$
 
-[Formal proof of the strip and phase identities](https://github.com/leecrossley/prime-band-mellin/tree/v1.0.0)
+[Formal proof of the strip and phase identities](https://github.com/leecrossley/prime-band-mellin/tree/v1.0.1)
 
 Assume RH and count each nontrivial zeta zero with its multiplicity. Here $\gamma$ is Euler's constant, $C_0=2+\gamma-\log(4\pi)=\sum_\rho 1/[\rho(1-\rho)]$, $\Lambda$ is the von Mangoldt function, and $R(b)=\sum_n\Lambda(n)(b/n-1)_+$. The Mellin transform is taken with density $t^{s-1}dt$. At $s=0,1$ the analytic transform takes its continuous limiting value. [Zero-sum identity](https://arxiv.org/pdf/1202.0729)
 
@@ -50,7 +50,7 @@ This gives a first sufficient width for eventual bias. At the other end, take $y
 
 ## Verification
 
-The explicit formula, prime number theorem and simultaneous phase approximation are used in the written proof. The executable certifies the dyadic numerical enclosures. The strip and phase identities have a separate Lean proof. [Formal proof of the strip and phase identities](https://github.com/leecrossley/prime-band-mellin/tree/v1.0.0)
+The explicit formula, prime number theorem and simultaneous phase approximation are used in the written proof. The executable certifies the dyadic numerical enclosures. The strip and phase identities have a separate Lean proof. [Formal proof of the strip and phase identities](https://github.com/leecrossley/prime-band-mellin/tree/v1.0.1)
 
 The recorded run used Python 3.9.6 on arm64 macOS. The verifier requires Python 3.9 or later and uses only the standard library.
 
@@ -60,8 +60,8 @@ bash verify-release.sh
 
 The command checks the release manifest, reruns the arithmetic, and compares its output with the recorded result.
 
-[Recorded verification output](evidence/check.txt) · [SHA-256 manifest](SHA256SUMS) · [Tagged publication](https://github.com/leecrossley/prime-band-extrema/releases/tag/v1.0.0)
+[Recorded verification output](evidence/check.txt) · [SHA-256 manifest](SHA256SUMS) · [Tagged publication](https://github.com/leecrossley/prime-band-extrema/releases/tag/v1.0.1)
 
 ## Related result
 
-[Eventual positivity at 151/100](https://github.com/leecrossley/prime-band-151-100/tree/v1.0.0) · [Conditional oscillation at three halves](https://github.com/leecrossley/prime-band-three-halves-oscillation/tree/v1.0.0)
+[Eventual positivity at 151/100](https://github.com/leecrossley/prime-band-151-100/tree/v1.0.1) · [Conditional oscillation at three halves](https://github.com/leecrossley/prime-band-three-halves-oscillation/tree/v1.0.1)
