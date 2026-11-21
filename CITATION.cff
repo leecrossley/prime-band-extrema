@@ -5,7 +5,7 @@ abstract: "An explicit zero-mass formula, an RH-conditional limsup, and a liminf
 authors:
   - family-names: Crossley
     given-names: Lee
-version: 1.0.3
+version: 1.0.4
 license: CC-BY-4.0
 repository-code: https://github.com/leecrossley/prime-band-extrema
 type: software
